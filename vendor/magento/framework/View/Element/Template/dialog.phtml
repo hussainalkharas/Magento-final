@@ -1,0 +1,14 @@
+<div id="my-dialog" style="display: none">
+    <p>Your dialog content here.</p>
+</div>
+
+<script type="text/javascript">
+require([
+    'jquery',
+    'domReady!'
+], function ($) {
+    $(document).ready(function() {
+        $("#my-dialog").dialog();
+    });
+});
+</script>

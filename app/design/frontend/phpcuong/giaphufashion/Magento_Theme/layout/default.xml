@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="header.links">
+            <block class="Magento\Framework\View\Element\Html\CustomLink\CustomLink" name="custom-header-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">https://www.linkedin.com/in/husain-
+alkharas-7312a2279</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template" name="my_dialog" template="Magento_Theme::dialog.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="catalog_category_view"> 
+        <referenceBlock name="my_dialog" remove="true" /> 
+        </referenceContainer>
+
+    </body>
+</page>
